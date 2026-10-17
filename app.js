@@ -1,6 +1,14 @@
 // 读取 data/index.json 里的期数列表，逐期加载并按时间线渲染
 const WEEKDAYS = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
 
+// 顶部筛选按钮；null 表示全部
+const TOOLS = [null, "Codex", "ChatGPT", "Claude", "DeepSeek"];
+
+// 全等或以“工具名 + 空格”开头都算，例如 Claude 能匹配 Claude Code
+function matchTool(tool, filter) {
+  return !filter || tool === filter || tool.startsWith(`${filter} `);
+}
+
 // 创建元素的小工具：文字一律走 textContent，避免把数据当 HTML 解析
 function el(tag, props = {}, children = []) {
   const node = document.createElement(tag);
@@ -51,11 +59,12 @@ function renderEntry(item) {
   return el("li", { class: "entry" }, [time, card]);
 }
 
-function renderNotes(issue) {
+function renderNotes(issue, filter) {
   const parts = [];
-  if (issue.quiet?.length) {
+  const quiet = (issue.quiet || []).filter((q) => matchTool(q.tool, filter));
+  if (quiet.length) {
     parts.push(el("h4", { text: "今天没有" }));
-    parts.push(el("ul", {}, issue.quiet.map((q) => el("li", { text: `${q.tool}：${q.note}` }))));
+    parts.push(el("ul", {}, quiet.map((q) => el("li", { text: `${q.tool}：${q.note}` }))));
   }
   if (issue.failed?.length) {
     parts.push(el("h4", { text: "抓取失败的来源" }));
@@ -66,17 +75,47 @@ function renderNotes(issue) {
   return parts.length ? el("div", { class: "notes" }, parts) : null;
 }
 
-function renderIssue(issue) {
+function renderIssue(issue, filter) {
   const { title, weekday } = formatDay(issue.date);
+  const items = issue.items.filter((item) => matchTool(item.tool, filter));
   return el("section", { class: "day", id: issue.date }, [
     el("div", { class: "day-head" }, [
       el("h2", { text: title }),
-      el("span", { class: "day-meta", text: `${weekday} · ${issue.items.length} 条` }),
+      el("span", { class: "day-meta", text: `${weekday} · ${items.length} 条` }),
     ]),
     issue.window ? el("p", { class: "day-window", text: issue.window }) : null,
-    el("ol", { class: "timeline" }, sortItems(issue.items).map(renderEntry)),
-    renderNotes(issue),
+    items.length
+      ? el("ol", { class: "timeline" }, sortItems(items).map(renderEntry))
+      : el("p", { class: "empty", text: `这一期没有 ${filter} 的条目。` }),
+    renderNotes(issue, filter),
   ]);
+}
+
+function renderFilters(current, onSelect) {
+  const nav = document.getElementById("filters");
+  nav.replaceChildren(...TOOLS.map((tool) => {
+    const button = el("button", {
+      type: "button",
+      class: "filter",
+      "aria-pressed": String(tool === current),
+      text: tool || "全部",
+    });
+    button.addEventListener("click", () => onSelect(tool));
+    return button;
+  }));
+}
+
+// 当前筛选记在 ?tool= 里，刷新或分享链接时保持不变
+function readFilter() {
+  const tool = new URLSearchParams(location.search).get("tool");
+  return TOOLS.includes(tool) ? tool : null;
+}
+
+function writeFilter(tool) {
+  const url = new URL(location.href);
+  if (tool) url.searchParams.set("tool", tool);
+  else url.searchParams.delete("tool");
+  history.replaceState(null, "", url);
 }
 
 async function main() {
@@ -86,7 +125,13 @@ async function main() {
     // 新的一期在最上面
     const dates = [...index.issues].sort().reverse();
     const issues = await Promise.all(dates.map((d) => fetch(`data/${d}.json`).then((r) => r.json())));
-    root.replaceChildren(...issues.map(renderIssue));
+
+    const show = (filter) => {
+      writeFilter(filter);
+      renderFilters(filter, show);
+      root.replaceChildren(...issues.map((issue) => renderIssue(issue, filter)));
+    };
+    show(readFilter());
   } catch (err) {
     root.replaceChildren(el("p", { class: "error", text: "简报加载失败，请稍后刷新。" }));
     console.error(err);
