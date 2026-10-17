@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-09",
+  "window": "北京时间 10 月 9 日 00:00—24:00",
+  "items": [
+    {
+      "time": "03:48",
+      "tool": "Claude Code",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.295",
+      "summary": "新增 onFailure: \"block\"，命令和 HTTP Hooks 启动失败、超时或异常退出时，会阻断原本要执行的操作；同时修复了远程 MCP 重连、claude -p 丢失前序输出等问题。",
+      "reason": "用 Claude Code 跑自动化任务、Hooks 或远程 MCP 的，值得升级并测试安全 Hooks 和重连。",
+      "adjust": "需要",
+      "score": 88,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295"
+    },
+    {
+      "time": "01:00",
+      "tool": "Claude",
+      "source": "Anthropic 官方新闻",
+      "title": "2026 年使用政策更新",
+      "summary": "新版使用政策 11 月 12 日生效，多数是对现有规则的澄清：欺骗性活动单独成节、选举条款收窄、明确武器与监控限制、高风险场景要求有资格的人员审核等。",
+      "reason": "日常聊天和写代码影响不大；做 Agent、商业集成或高风险业务的，需要对照新政策。",
+      "adjust": "可以关注",
+      "score": 82,
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+    },
+    {
+      "time": null,
+      "tool": "Codex",
+      "source": "ChatGPT 发布说明",
+      "title": "输入框预测（Composer predictions，测试版）",
+      "summary": "Codex 桌面端可以根据当前会话，预测你要发的下一条消息；按 Tab 接受后仍可修改，不会自动发送。",
+      "reason": "面向个人 ChatGPT Pro 用户，需要最新版桌面应用；预测本身不消耗额度，可以体验，不必为此改工作流。",
+      "adjust": "可以关注",
+      "score": 70,
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    }
+  ],
+  "quiet": [
+    { "tool": "ChatGPT", "note": "没有找到官方标注 10 月 9 日的独立 ChatGPT 更新。" },
+    { "tool": "DeepSeek", "note": "没有已确认的更新；官方新闻页和 X 未能抓取，不代表当天确实没有消息。" }
+  ],
+  "failed": [
+    { "name": "@OpenAI", "url": "https://x.com/OpenAI" },
+    { "name": "@OpenAIDevs", "url": "https://x.com/OpenAIDevs" },
+    { "name": "@claudeai", "url": "https://x.com/claudeai" },
+    { "name": "@AnthropicAI", "url": "https://x.com/AnthropicAI" },
+    { "name": "@deepseek_ai", "url": "https://x.com/deepseek_ai" },
+    { "name": "DeepSeek 官方新闻", "url": "https://api-docs.deepseek.com/news/" }
+  ]
+}
