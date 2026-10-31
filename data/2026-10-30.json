@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-30",
+  "window": "北京时间 10 月 30 日 00:00—24:00",
+  "items": [
+    {
+      "time": "23:12",
+      "tool": "ChatGPT",
+      "source": "X @OpenAI",
+      "title": "OpenAI Private Intelligence",
+      "summary": "面向企业的数据隐私方案：限制 OpenAI 对业务内容的访问，为符合条件的工作流程提供零数据保留和隐私推理（预览版）；业务数据归企业所有，由企业决定智能体能访问什么、执行什么、何时需要批准。",
+      "reason": "对数据敏感的团队可以关注隐私推理预览版；个人用户不受影响。",
+      "adjust": "可以关注",
+      "score": 58,
+      "url": "https://x.com/OpenAI/status/2116186509384815084"
+    },
+    {
+      "time": "17:30",
+      "tool": "ChatGPT",
+      "source": "OpenAI 官方博客",
+      "title": "网站可通过通用信号表达 AI 训练偏好",
+      "summary": "OpenAI 将遵循 robots.txt 中的一项通用信号，网站可以一次向多家参与的提供商表达内容是否可用于基础模型训练；计划在未来几个月内落实，现有爬虫控制继续有效。",
+      "reason": "只和网站运营者有关，而且还没落地。",
+      "adjust": "可以关注",
+      "score": 55,
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+    },
+    {
+      "time": "17:00",
+      "tool": "ChatGPT",
+      "source": "OpenAI 官方博客",
+      "title": "社区安全报告与青少年新保护措施",
+      "summary": "OpenAI 承诺每半年发布社区安全报告，首份在 2027 年初；对所有用户限制重构过去大规模袭击的细节；对话出现暴力倾向时 ChatGPT 将能自动结束对话；进一步限制未成年用户获取武器和安防相关信息。",
+      "reason": "属于安全策略调整，普通使用不受影响；被误判为未成年的可通过 Persona 验证。",
+      "adjust": "可以关注",
+      "score": 62,
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+    },
+    {
+      "time": "09:06",
+      "tool": "Claude Code",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.314",
+      "summary": "新增 permissions.blockWritesOutsideWorkingDirectories，禁止写工作目录以外的路径；VS Code 和 Desktop 新增闲置压缩；修复 claude -p 启动失败时以退出码 0 无输出退出、管理员限制 effort 时每轮报错、Bedrock 多图会话报 Input is too long 等问题；FORCE_HYPERLINK=false 改为关闭超链接。",
+      "reason": "在脚本或 CI 里用 claude -p 的必须升级；注意 FORCE_HYPERLINK=false 的含义反过来了。",
+      "adjust": "需要",
+      "score": 88,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314"
+    },
+    {
+      "time": "03:47",
+      "tool": "Codex",
+      "source": "GitHub 发布记录",
+      "title": "Codex CLI 0.166.0",
+      "summary": "转录内容支持键盘选择和搜索；模型目录加入 GPT-6.1 Terra；新增 codex queue --resume 和 codex doctor --network-only；安全拦截时说明更清楚并提供更安全的后续提示。修复恢复或 fork 会话丢失权限设置和推理 token 计数等问题。",
+      "reason": "用 Codex CLI 的值得升级，长会话恢复和 fork 的修复影响直接。",
+      "adjust": "可以关注",
+      "score": 80,
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0"
+    },
+    {
+      "time": "02:22",
+      "tool": "Claude",
+      "source": "X @AnthropicAI",
+      "title": "Claude 用自我评估检测滥用",
+      "summary": "Anthropic 训练 Claude 在回复后立即对对话做初步安全评估，从 6 月开始使用，发现了其他安全措施没有覆盖到的滥用；它依靠 Claude 自己的判断，会随模型进步更准确。",
+      "reason": "属于安全机制介绍，不影响日常使用。",
+      "adjust": "可以关注",
+      "score": 50,
+      "url": "https://x.com/AnthropicAI/status/2115871889549865429"
+    },
+    {
+      "time": "01:32",
+      "tool": "Claude",
+      "source": "X @claudeai",
+      "title": "Claude 移动端本周更新",
+      "summary": "iOS 和 Android 支持多账号切换；iPhone 语音模式支持 CarPlay；语音模式响应更快、嘈杂环境识别更好；界面新增 24 种语言，共 33 种；iPad 上生成内容在对话旁边打开；Android 在 Chromebook 和折叠屏上像笔记本应用一样使用。",
+      "reason": "常在手机上用 Claude 的可以更新应用；下拉搜索还没上线。",
+      "adjust": "可以关注",
+      "score": 70,
+      "url": "https://x.com/claudeai/status/2115859377488072879"
+    },
+    {
+      "time": "01:00",
+      "tool": "ChatGPT",
+      "source": "OpenAI 官方博客",
+      "title": "新版模型规范（Model Spec）",
+      "summary": "模型规范围绕五项价值观重新组织：忠于人类意图、尽量减少伤害、诚实与透明、人的自主性、关怀；新增指令层级和上下文相关指导，移除大部分细化的风格指导，改用“GPT”指代模型。",
+      "reason": "风格指导大部分移除后，想要特定风格最好在指令里写明。",
+      "adjust": "可以关注",
+      "score": 70,
+      "url": "https://openai.com/index/updated-model-spec"
+    },
+    {
+      "time": null,
+      "tool": "ChatGPT",
+      "source": "ChatGPT 发布说明",
+      "title": "iOS 和 Android 支持账号切换",
+      "summary": "ChatGPT 手机应用可以同时登录最多 2 个账号并直接切换，每个账号的对话、记忆、设置和订阅各自独立。在 设置 > 切换账号 中使用。",
+      "reason": "同时有个人账号和工作账号的，在手机上切换方便很多。",
+      "adjust": "可以关注",
+      "score": 65,
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    }
+  ],
+  "quiet": [
+    {
+      "tool": "DeepSeek",
+      "note": "窗口内没有已确认的更新；更新记录最新一条标注 10 月 17 日，最新推文为北京时间 10 月 20 日 17:30，都在窗口外。"
+    }
+  ],
+  "failed": [
+    {
+      "name": "@OpenAI（北京 10-30 03:59—23:12 未加载到推文）",
+      "url": "https://x.com/OpenAI"
+    },
+    {
+      "name": "@OpenAIDevs（北京 10-30 01:14 之后未加载到推文）",
+      "url": "https://x.com/OpenAIDevs"
+    },
+    {
+      "name": "DeepSeek 官方新闻（无新闻列表）",
+      "url": "https://api-docs.deepseek.com/news/"
+    }
+  ]
+}
