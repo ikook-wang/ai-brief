@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-31",
+  "window": "北京时间 10 月 31 日 00:00—24:00",
+  "items": [
+    {
+      "time": "09:59",
+      "tool": "Claude",
+      "source": "X @AnthropicAI",
+      "title": "Anthropic 研究：自动化细微涌现失对齐研究",
+      "summary": "Anthropic 让数千个 Claude 智能体尝试绕过训练数据监控器，生成看似无害、实际在教失对齐行为的训练数据，这些样例可直接用来改进未来的监控器。",
+      "reason": "属于安全研究，不影响日常使用。",
+      "adjust": "可以关注",
+      "score": 48,
+      "url": "https://x.com/AnthropicAI/status/2116349211549843666"
+    },
+    {
+      "time": "09:01",
+      "tool": "Claude Code",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.316",
+      "summary": "Opus 4.8 的 fast mode 弃用，11 月 30 日移除，之后请求直接报错、不回退；新增 CLAUDE_CODE_DISABLE_ULTRATHINK、CLAUDE_CODE_SUBAGENT_EFFORT 等环境变量；gateway 新增组共享月度预算和分层策略；Team/Enterprise 服务端托管设置不再弹审批提示直接生效；修复 Claude Code 自行退出时残留 shell 命令等问题。",
+      "reason": "用 Opus 4.8 fast mode 的要在 11 月 30 日前切到 Opus 5.5；托管设置不再弹审批提示，管理员需要知道。",
+      "adjust": "需要",
+      "score": 85,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316"
+    },
+    {
+      "time": "01:29",
+      "tool": "Claude",
+      "source": "X @claudeai",
+      "title": "Max 计划改名，已验证 Ultra 账号取消 5 小时限制",
+      "summary": "Max 5x 改名为 Max（每月 100 美元），Max 20x 改名为 Ultra（每月 200 美元），订阅用户无需操作；已验证的 Ultra 账号取消 5 小时限制，较新账号验证前保留临时限制；每周限额不变。",
+      "reason": "订阅 Ultra 的长任务可以连续跑，每周限额仍需留意；Max 只是改名。",
+      "adjust": "可以关注",
+      "score": 82,
+      "url": "https://x.com/claudeai/status/2116220869479428500"
+    }
+  ],
+  "quiet": [
+    {
+      "tool": "Codex",
+      "note": "窗口内没有已确认的更新；GitHub 最新正式版 0.166.0 发布于北京时间 10 月 30 日 03:47，更新日志最新一条标注 10 月 29 日。"
+    },
+    {
+      "tool": "ChatGPT",
+      "note": "窗口内没有已确认的更新；发布说明最新一条标注 10 月 30 日，官方博客最新一篇为北京时间 10 月 30 日 17:30，@OpenAI 窗口内只有一条品牌视频推文。"
+    },
+    {
+      "tool": "DeepSeek",
+      "note": "窗口内没有已确认的更新；更新记录最新一条标注 10 月 17 日，最新推文为 10 月 20 日，都在窗口外。"
+    }
+  ],
+  "failed": [
+    {
+      "name": "@OpenAI（北京 10-31 03:38 之后未加载到推文）",
+      "url": "https://x.com/OpenAI"
+    },
+    {
+      "name": "DeepSeek 官方新闻（无新闻列表）",
+      "url": "https://api-docs.deepseek.com/news/"
+    }
+  ]
+}
