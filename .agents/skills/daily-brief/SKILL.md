@@ -73,7 +73,7 @@ python3 .agents/skills/daily-brief/scripts/brief_time.py window YYYY-MM-DD
 python3 -c "import json,sys; json.load(open(sys.argv[1])); json.load(open('data/index.json')); print('ok')" data/YYYY-MM-DD.json
 ```
 
-再逐项核对 `tool`、`adjust`、`time`、`score` 的取值有没有超出 `AGENTS.md` 规定的范围。
+再逐项核对 `tool`、`adjust`、`time`、`score` 的取值有没有超出 `AGENTS.md` 规定的范围。同时核对每条的 `score` 和 `adjust` 是否符合 `AGENTS.md` 的评分分档：85 分以上必须是“需要”，写“需要”的必须在 85 分以上。
 
 ## 6. 本地预览
 
