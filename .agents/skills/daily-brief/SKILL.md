@@ -1,13 +1,13 @@
 ---
 name: daily-brief
-description: 出一期“AI 工具变化简报”：按北京时间某一天的窗口，核查 Codex、ChatGPT、Claude（含 Claude Code）、DeepSeek 的官方更新，写出 raw/YYYY-MM-DD.md 原文和 data/YYYY-MM-DD.json 数据，本地预览后汇报。当 Steve 让你出某一天的简报、补某一期、重做或核对某一期简报时使用。
+description: 出一期“AI 工具变化简报”：按北京时间某一天的窗口，核查 Codex、ChatGPT、Claude（含 Claude Code）、DeepSeek 的官方更新，写出 raw/YYYY-MM-DD.md 原文和 data/YYYY-MM-DD.json 数据，本地预览后汇报。当用户让你出某一天的简报、补某一期、重做或核对某一期简报时使用。
 ---
 
 # 出一期简报
 
 收录标准、信息源和数据格式以项目根目录的 `AGENTS.md` 为准，本技能只讲怎么做。开始前先读一遍 `AGENTS.md` 和最近一期的 `raw/`、`data/`，照着它们的写法来。
 
-日期由 Steve 当次指定，下文叫“当天”。没给日期就先问，不要自己猜。
+日期由使用者当次指定，下文叫“当天”。没给日期就先问，不要自己猜。
 
 ## 1. 换算时间窗口
 
@@ -59,7 +59,7 @@ python3 .agents/skills/daily-brief/scripts/brief_time.py window YYYY-MM-DD
 按 `AGENTS.md` 规定的结构写，参照最近一期的标题层级、粗体字段和表格写法。
 
 - 每条都写清楚时间依据，例如“GitHub 发布记录 `published_at`”或“推文 ID 解码”。
-- 评分和推荐理由，以对 Steve 实际使用的影响为准；“是否调整用法”按 `AGENTS.md` 的口径填。
+- 评分和推荐理由，以对日常使用这几个工具的人的影响为准；“是否调整用法”按 `AGENTS.md` 的口径填。
 - 没有更新的工具写“今天没有”，并列出查过的页面。
 - 原文写完，自己对照第 2 步的记录核对一遍：每个查过的页面都要在正文、已排除条目或未能查到的页面里出现。
 
@@ -92,7 +92,7 @@ python3 -m http.server 8000
 
 ## 7. 汇报
 
-不提交、不推送。向 Steve 汇报三件事：
+先汇报三件事，提交和推送等使用者确认后再做：
 
 1. 查了哪些页面
 2. 每一条的发布时间是怎么确认的（用的哪种依据，换算成北京时间是几点）
