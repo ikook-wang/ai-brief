@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-03",
+  "window": "北京时间 11 月 3 日 00:00—24:00",
+  "items": [
+    {
+      "time": "20:00",
+      "tool": "Codex",
+      "source": "OpenAI 官方博客",
+      "title": "OpenAI：用 ChatGPT 和 Codex 加速物理世界的工程",
+      "summary": "OpenAI 分享模型在机械设计、电气工程和仿真上的进展：GPT-6 Astra 不经人工直接修改完成了一个与 Codex 对话的原型设备设计，投产前仍需多轮审查；硬件团队自 2 月以来模型用量增长 23 倍；扩大与 Chip Ganassi Racing 的合作，新宣布与 Mazda 的研究合作。",
+      "reason": "属于研究进展和合作邀请，不是产品功能变化；做机械、电子、CAD 工作的人可以了解 Codex 在这类工作上能做到哪一步。",
+      "adjust": "可以关注",
+      "score": 55,
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+    },
+    {
+      "time": "09:25",
+      "tool": "Claude Code",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.317",
+      "summary": "不同模型的子代理改用该模型保存的 effort 或默认值；Read 工具再次读取未改动的文件返回完整内容；工具调用发送账号邮箱前先询问；Agent SDK hook 新增 onFailure: \"block\"；gateway 管理 API 新增成本报表；磁盘写满时 claude -p 改为以 1 退出；修复 MCP 断开、auto mode 每轮失败等多项问题。",
+      "reason": "子代理 effort 取值来源、Read 重复读取和 claude -p 退出码这几处默认行为有变化。",
+      "adjust": "需要",
+      "score": 85,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317"
+    },
+    {
+      "time": "03:51",
+      "tool": "Claude",
+      "source": "X @AnthropicAI",
+      "title": "Anthropic 驻留计划开放申请",
+      "summary": "Anthropic Residency 是带薪、固定期限的研究项目，面向希望让 AI 安全、对所有人有益的学者、技术创始人和资深工程师，不要求机器学习背景，11 月 22 日前申请。",
+      "reason": "属于研究计划，不影响日常使用；对 AI 安全研究感兴趣的可以在截止前申请。",
+      "adjust": "可以关注",
+      "score": 40,
+      "url": "https://x.com/AnthropicAI/status/2117343929960112486"
+    },
+    {
+      "time": "02:00",
+      "tool": "ChatGPT",
+      "source": "OpenAI 官方博客",
+      "title": "OpenAI 提高安全漏洞赏金，筹备下一轮内部安全攻坚",
+      "summary": "中危以上漏洞奖励区间中点平均提高到四倍以上，ChatGPT、Codex、API 平台等核心产品的严重漏洞最高 30,000 美元，特别重大的加奖金最高约 172,000 美元；新增质量、忠诚度、重点活动奖金，追溯补发近 30 天差额；同时与 Cathedral 合作筹备下一轮内部安全攻坚。",
+      "reason": "属于安全类消息，不改变 ChatGPT 和 Codex 的用法；做安全研究的人可以留意新的奖励规则。",
+      "adjust": "可以关注",
+      "score": 45,
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties/"
+    }
+  ],
+  "quiet": [
+    {
+      "tool": "DeepSeek",
+      "note": "窗口内没有已确认的更新；更新记录最新一条标注 10 月 17 日，自己发的最新推文为 10 月 20 日，转帖的 @DeepSeekHarness 原帖为 11 月 2 日，都在窗口外。"
+    }
+  ],
+  "failed": [
+    {
+      "name": "DeepSeek 官方新闻（无新闻列表）",
+      "url": "https://api-docs.deepseek.com/news/"
+    }
+  ]
+}
