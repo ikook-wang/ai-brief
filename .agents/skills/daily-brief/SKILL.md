@@ -29,7 +29,11 @@ python3 .agents/skills/daily-brief/scripts/brief_time.py window YYYY-MM-DD
    `gh` 不可用时，用 curl 访问 `api.github.com` 上同一个接口。
 2. **官方博客和新闻**（OpenAI 官方博客、Anthropic 官方新闻）：在列表页找到窗口前后几天的文章，再打开文章页读 `article:published_time` / `datePublished`。OpenAI 有 RSS 的，就读 `pubDate`。
 3. **只标日期的发布说明和更新日志**（learn.chatgpt.com 更新日志、ChatGPT 发布说明、Claude 发布说明、DeepSeek 更新记录与新闻）：记下当天，以及前后一天的条目，留到第 3 步确认时间。
-4. **X 账号**（@OpenAI、@OpenAIDevs、@claudeai、@AnthropicAI、@deepseek_ai）：一是找有没有第 1—3 步漏掉的官方消息，二是给只标日期的条目找推文时间。写清楚时间线加载到了哪个时段。
+4. **X 账号**（@OpenAI、@OpenAIDevs、@claudeai、@AnthropicAI、@deepseek_ai）：一是找有没有第 1—3 步漏掉的官方消息，二是给只标日期的条目找推文时间。
+   - 用项目 `.mcp.json` 里的 Playwright 浏览器打开。这个浏览器应已由使用者登录过 X，登录状态保存在本机。先确认是登录状态（例如有左侧导航栏、推文上有“翻译自 英语 · 显示原文”）。
+   - 不要只看第一屏：时间线往下翻，直到出现窗口开始之前的推文；或者用高级搜索 `https://x.com/search?q=from:账号 since:YYYY-MM-DD until:YYYY-MM-DD&f=live` 核对（日期按 UTC，范围要盖住整个窗口，`until` 当天不含）。
+   - 发现没登录，原文写明“未登录”和时间线加载到的时段，汇报时提醒使用者在这个浏览器里登录 X。
+   - 写清楚时间线加载到了哪个时段。
 
 普通抓取返回 403 或内容不全时，改用浏览器打开同一个官方页面，并在原文里注明“用浏览器打开”。不要换成别的网站。
 
