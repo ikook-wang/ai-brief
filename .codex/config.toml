@@ -1,0 +1,6 @@
+# 项目用到的 MCP（Codex 读这里；Claude Code 读 .mcp.json）
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest"]
+# 定时任务没人审批，浏览器工具直接放行
+default_tools_approval_mode = "approve"
