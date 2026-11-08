@@ -1,6 +1,7 @@
 # 项目用到的 MCP（Codex 读这里；Claude Code 读 .mcp.json）
 [mcp_servers.playwright]
 command = "npx"
-args = ["@playwright/mcp@latest"]
+args = ["@playwright/mcp@latest", "--user-data-dir", "/Users/ikook/Library/Caches/ms-playwright-mcp/mcp-chrome-c8ce305"]
+# 固定使用简报项目的浏览器资料，不随聊天或工作目录变化。
 # 定时任务没人审批，浏览器工具直接放行
 default_tools_approval_mode = "approve"
