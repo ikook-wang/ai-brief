@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-07",
+  "window": "北京时间 11 月 7 日 00:00—24:00",
+  "items": [
+    {
+      "time": "08:02",
+      "tool": "Codex",
+      "source": "X @OpenAIDevs",
+      "title": "OpenAI Developers 插件新增 Showcase 标签",
+      "summary": "可寻找覆盖代理、创意工具、数据可视化、语音等方向的 OpenAI API 入门项目，在 Codex 中打开并继续构建。API 积分是此前已公布的权益，本期新增内容是 Showcase 标签。",
+      "reason": "想用 Codex 开始一个 API 应用的人，可以从现成入门项目着手。",
+      "adjust": "可以关注",
+      "score": 75,
+      "url": "https://x.com/OpenAIDevs/status/2118856544733532452"
+    },
+    {
+      "time": "05:16",
+      "tool": "Claude",
+      "source": "X @AnthropicAI",
+      "title": "Anthropic 分享代理记忆中的“做梦”机制",
+      "summary": "官方推文介绍“做梦”如何帮助 Claude 整理学到的内容、纠正错误，并让下一次更容易找到所需信息。属于代理记忆机制介绍，未宣布新的用户功能。",
+      "reason": "对长期使用 Claude、设计代理记忆流程的人有参考价值。",
+      "adjust": "可以关注",
+      "score": 55,
+      "url": "https://x.com/AnthropicAI/status/2118814753154064501"
+    },
+    {
+      "time": "03:58",
+      "tool": "ChatGPT",
+      "source": "X @OpenAI",
+      "title": "OpenAI 参与网络越狱严重程度评估框架",
+      "summary": "与 Frontier Model Forum 及成员公司合作，评估绕过 AI 安全措施后能够解锁的能力及其易用程度，帮助识别严重网络危害并确定加强防护的优先顺序。",
+      "reason": "属于安全评估消息，可以关注模型防护的评估方向。",
+      "adjust": "可以关注",
+      "score": 45,
+      "url": "https://x.com/OpenAI/status/2118795218099253606"
+    },
+    {
+      "time": "03:49",
+      "tool": "Claude",
+      "source": "X @AnthropicAI",
+      "title": "Anthropic 分享 AI 辅助科学建模的研究方向",
+      "summary": "官方推文介绍 AI 通过把科学模型写成代码、运行、拟合和修改，探索不同模型结构并判断数据支持哪些解释的研究方向。",
+      "reason": "做科研建模或代码化模型探索的人可以关注。",
+      "adjust": "可以关注",
+      "score": 40,
+      "url": "https://x.com/AnthropicAI/status/2118792930211107115"
+    },
+    {
+      "time": "03:08",
+      "tool": "ChatGPT",
+      "source": "OpenAI 官方博客",
+      "title": "BioBasicsBench：评估 AI 对真实实验数据的分析能力",
+      "summary": "与 Ligo 合作，用 100 个真实湿实验室日常分析任务检查 AI 是否能解读原始数据、发现错误并识别证据不足。xhigh 档下 GPT-6 Astra 平均得分为可得分的 66.7%，GPT-5.6 Sol 为 43.8%；分数提升不等于已能可靠作出实验室判断。",
+      "reason": "用 AI 辅助科学数据分析的人可以了解能力进展与局限。",
+      "adjust": "可以关注",
+      "score": 40,
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+    },
+    {
+      "time": "01:04",
+      "tool": "Claude Code",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.319：自动模式、MCP 后台任务与权限行为调整",
+      "summary": "自动模式在部分配置下不再回退到内置分类器；终端支持 MCP 后台任务，新增拒绝等待权限提示的设置。修正 claude -p 的失败退出码，并调整 /loop、代理与证书处理，修复多项权限和安全问题。",
+      "reason": "自动模式与 MCP 任务行为改变，依赖脚本退出码、/loop 或代理配置的日常流程需要核对。",
+      "adjust": "需要",
+      "score": 90,
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319"
+    }
+  ],
+  "quiet": [
+    {
+      "tool": "DeepSeek",
+      "note": "今天没有。已核查官方更新记录、新闻目录及登录后的 @deepseek_ai 完整窗口搜索；更新记录和新闻目录最新为 2026-10-17，搜索范围内没有结果，未确认当天有符合标准的更新。"
+    }
+  ],
+  "failed": []
+}
