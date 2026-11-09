@@ -86,7 +86,7 @@ function renderIssue(issue, filter) {
     issue.window ? el("p", { class: "day-window", text: issue.window }) : null,
     items.length
       ? el("ol", { class: "timeline" }, sortItems(items).map(renderEntry))
-      : el("p", { class: "empty", text: `这一期没有 ${filter} 的条目。` }),
+      : el("p", { class: "empty", text: filter ? `当天未确认到 ${filter} 符合收录标准的更新。` : "当天未确认到符合收录标准的更新；各工具核查结果及来源缺失见下方。" }),
     renderNotes(issue, filter),
   ]);
 }
