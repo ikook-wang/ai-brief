@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-08",
+  "window": "北京时间 11 月 8 日 00:00—24:00",
+  "items": [],
+  "quiet": [
+    {
+      "tool": "Codex",
+      "note": "今天没有已确认符合收录标准的更新；窗口内预发布只有版本号，无更新内容。"
+    },
+    {
+      "tool": "ChatGPT",
+      "note": "今天没有已确认符合收录标准的更新；已查发布说明、更新日志、官方新闻与 X。"
+    },
+    {
+      "tool": "Claude",
+      "note": "今天没有已确认符合收录标准的更新；已查 Claude Code 发布记录、Claude 发布说明、新闻与 X。"
+    },
+    {
+      "tool": "DeepSeek",
+      "note": "今天没有已确认的更新，不代表当天确实没有；官方新闻入口显示 Page Not Found，影响完整性判断。"
+    }
+  ],
+  "failed": [
+    {
+      "name": "DeepSeek 官方新闻（新闻内容未加载，Page Not Found）",
+      "url": "https://api-docs.deepseek.com/news/"
+    }
+  ]
+}
