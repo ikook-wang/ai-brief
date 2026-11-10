@@ -20,7 +20,7 @@
   - Claude Code 发布记录：https://github.com/anthropics/claude-code/releases
   - X：@claudeai、@AnthropicAI
 - DeepSeek
-  - 官方新闻和更新记录：https://api-docs.deepseek.com/news/、https://api-docs.deepseek.com/updates
+  - 官方新闻和更新记录：https://api-docs.deepseek.com/updates；新闻没有列表页（`/news/` 打不开），从文档侧边栏的 News 链接进入，具体新闻的地址形如 https://api-docs.deepseek.com/news/news261017
   - X：@deepseek_ai
 
 ## 时间窗口
@@ -49,7 +49,7 @@
 
 - 打不开、内容不全的页面如实记下来，不用其他网站代替。
 - 普通抓取被拦（比如返回 403）时，可以改用浏览器打开同一个官方页面；打开了就算查过，但要在原文里说明。
-- X 账号用项目里声明的 Playwright 浏览器查看（Claude Code 读 `.mcp.json`，Codex 读 `.codex/config.toml`，两边用 `--user-data-dir` 固定同一份项目浏览器资料，不随聊天目录变化）。这个浏览器要先由使用者自己登录一次 X，之后复用本机登录状态；登录失效时仍需使用者重新登录。同一份资料不能被多个浏览器实例同时占用。时间线要往下翻到覆盖整个时间窗口，或者用高级搜索 `from:账号 since:日期 until:日期` 核对。
+- X 账号用项目里声明的 Playwright 浏览器查看（Claude Code 读 `.mcp.json`，Codex 读 `.codex/config.toml`，在项目目录里运行时，两边用的是同一份浏览器资料）。这个浏览器要先由使用者自己登录一次 X，之后复用本机登录状态；登录失效时仍需使用者重新登录。同一份资料不能被多个浏览器实例同时占用。时间线要往下翻到覆盖整个时间窗口，或者用高级搜索 `from:账号 since:日期 until:日期` 核对。
 - 发现 X 没登录时，原文写明“未登录”和没加载到的时段，并在汇报里提醒使用者登录。定时无人值守运行不询问、不等待人工登录；单个来源打不开或内容不全不阻止发布：在原文、数据 `failed` 和汇报中说明缺失及影响，只写已核实内容；受影响工具注明“不代表当天确实没有”，完成数据检查与本地预览后照常发布。具体处理见技能。
 
 ## 原文 raw/YYYY-MM-DD.md

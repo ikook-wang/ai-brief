@@ -4,9 +4,7 @@
       "type": "stdio",
       "command": "npx",
       "args": [
-        "@playwright/mcp@latest",
-        "--user-data-dir",
-        "/Users/ikook/Library/Caches/ms-playwright-mcp/mcp-chrome-c8ce305"
+        "@playwright/mcp@latest"
       ],
       "env": {}
     }
