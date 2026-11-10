@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-09",
+  "window": "北京时间 11 月 9 日 00:00—24:00",
+  "items": [
+    {
+      "time": "21:00",
+      "tool": "ChatGPT",
+      "source": "OpenAI 官方博客",
+      "title": "OpenAI 介绍研究基础设施的 Control Room",
+      "summary": "集中追踪研究模型工作负载，在决定停止或暂停任务后 35 秒内停止模型输出；系统自身故障时也会停止输出。",
+      "reason": "了解 AI 安全运行管控；没有宣布 ChatGPT 日常功能或额度变化。",
+      "adjust": "可以关注",
+      "score": 60,
+      "url": "https://openai.com/index/control-room/"
+    }
+  ],
+  "quiet": [
+    {
+      "tool": "Codex",
+      "note": "今天没有已确认符合收录标准的更新；已查 GitHub、更新日志、官方新闻与 X。"
+    },
+    {
+      "tool": "Claude",
+      "note": "今天没有已确认符合收录标准的更新；新模型与 Claude Code 新版的精确时间在次日。"
+    },
+    {
+      "tool": "DeepSeek",
+      "note": "今天没有已确认的更新，不代表当天确实没有；新闻入口 Page Not Found，影响完整性判断。"
+    }
+  ],
+  "failed": [
+    {
+      "name": "DeepSeek 官方新闻（新闻内容未加载，Page Not Found）",
+      "url": "https://api-docs.deepseek.com/news/"
+    }
+  ]
+}
