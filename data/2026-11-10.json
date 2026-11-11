@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-10",
+  "window": "北京时间 11 月 10 日 00:00—24:00",
+  "items": [
+    {
+      "tool": "Codex",
+      "time": "02:47",
+      "source": "X @OpenAIDevs",
+      "title": "Codex 的 ModRetro Chromatic 插件支持制作掌机游戏",
+      "summary": "可用插件设计关卡、制作动画精灵并在掌机上测试游戏，Codex 可构建 ROM。",
+      "reason": "适合想尝试掌机游戏开发的人。",
+      "score": 72,
+      "adjust": "可以关注",
+      "url": "https://x.com/OpenAIDevs/status/2119864571733446774"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "04:01",
+      "source": "X @OpenAIDevs",
+      "title": "同一个 dot 可连接多台本地电脑",
+      "summary": "可为任务选择使用哪台电脑，让专用机器构建和测试应用，同时继续在笔记本上编码。",
+      "reason": "多机工作流可以重新分配构建和测试任务。",
+      "score": 88,
+      "adjust": "需要",
+      "url": "https://x.com/OpenAIDevs/status/2119883176726409645"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "03:00",
+      "source": "OpenAI 官方博客",
+      "title": "ChatGPT Enterprise 上架 AWS Marketplace",
+      "summary": "企业可通过既有 AWS 采购和账单关系购买、管理 ChatGPT Enterprise，符合条件的支出可计入 AWS 承诺消费。",
+      "reason": "有 AWS 采购体系的企业可以关注新采购渠道。",
+      "score": 75,
+      "adjust": "可以关注",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "18:00",
+      "source": "OpenAI 官方博客",
+      "title": "Businesses in ChatGPT 开启 beta",
+      "summary": "商家可通过 Business Hub 认领业务、维护信息并查看互动洞察；美国符合条件的电商和在线服务商可创建 Business Agent。",
+      "reason": "经营业务的用户可以关注认领和客户问答入口。",
+      "score": 82,
+      "adjust": "可以关注",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt/"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": null,
+      "source": "ChatGPT 发布说明",
+      "title": "Advanced 与 Standard Voice 将于 12 月 11 日退役",
+      "summary": "ChatGPT 宣布将退役 Advanced 和 Standard Voice，集中改进 GPT-Live；视频和屏幕共享在 GPT-Live 支持前继续由 Advanced Voice 提供。",
+      "reason": "仍在使用旧语音模式的人需要留意迁移日期。",
+      "score": 86,
+      "adjust": "需要",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "15:00",
+      "source": "OpenAI 官方博客",
+      "title": "OpenAI 与 Upwork 发布 AI 对自由职业工作的研究",
+      "summary": "研究报告观察到自由职业服务需求与技能组合变化，AI 相关项目的预算更大、涉及的工作更多。",
+      "reason": "自由职业者可以关注需求变化；这是研究观察。",
+      "score": 62,
+      "adjust": "可以关注",
+      "url": "https://openai.com/index/ai-effect-on-freelance-work/"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "17:00",
+      "source": "OpenAI 官方博客",
+      "title": "OpenAI 分享教育中的 AI 使用指导研究",
+      "summary": "结合 ThinkYoung 研究与 EMEA 教育合作经验，讨论教师支持、AI 素养及独立学习的指导缺口。",
+      "reason": "教育工作者可以关注教学指导和评估经验。",
+      "score": 60,
+      "adjust": "可以关注",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education/"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "20:00",
+      "source": "OpenAI 官方博客",
+      "title": "OpenAI Academy 为照护者提供 ChatGPT 工作坊",
+      "summary": "与合作机构在美国五座城市开展免费线下活动，帮助照护者练习日程整理、资源查找及负责任地使用 ChatGPT。",
+      "reason": "属于小范围 AI 使用培训，有当地参与需求的人可以关注。",
+      "score": 55,
+      "adjust": "可以关注",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life/"
+    },
+    {
+      "tool": "Claude",
+      "time": "02:57",
+      "source": "Anthropic 官方新闻",
+      "title": "Claude Fable 5.2 与 Mythos 5.2 发布",
+      "summary": "编码、推理和视觉能力提升；标准 API 价格为每百万输入/输出 token 8/40 美元。Fable 面向付费用户，Mythos 需通过验证计划申请。",
+      "reason": "新主力模型及价格变化值得重新评估模型选择。",
+      "score": 94,
+      "adjust": "需要",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "tool": "Claude Code",
+      "time": "03:22",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.321 更新默认 Fable 并修复权限问题",
+      "summary": "加入 Fable 5.2 并作为默认 Fable；修复 MCP OAuth 重定向泄露秘密、Bash 沙箱与文件权限检查等问题；remote-control 新增 --settings。",
+      "reason": "默认模型和权限行为改变，建议更新并核对工作流。",
+      "score": 92,
+      "adjust": "需要",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321"
+    },
+    {
+      "tool": "Claude Code",
+      "time": "10:29",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code v2.1.322 为 Vertex 增加 fast mode",
+      "summary": "在 Vertex 的 global、us 和 eu 区域加入 fast mode；Vertex 拒绝时回退到标准速度。",
+      "reason": "使用 Vertex 的开发者可以关注加速选项。",
+      "score": 76,
+      "adjust": "可以关注",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322"
+    }
+  ],
+  "quiet": [
+    {
+      "tool": "DeepSeek",
+      "note": "今天没有已确认的更新；已查更新记录、侧边栏最新新闻及已登录 X 窗口搜索，最新新闻和更新记录为 10 月 17 日。"
+    }
+  ],
+  "failed": []
+}
