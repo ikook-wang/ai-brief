@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-13",
+  "window": "北京时间 11 月 13 日 00:00—24:00",
+  "items": [
+    {
+      "tool": "Codex",
+      "time": "11:54",
+      "source": "GitHub 发布记录",
+      "title": "Codex CLI 0.168.0 新增并排对话和模型提供商管理",
+      "summary": "可在 Sessions → Model providers 选择新对话默认提供商；通过 features.tui_workspace 开启并排对话，features.image_generation_animation 开启 GIF 生成与编辑；修复历史记录账号筛选和恢复对话的提供商选择。",
+      "reason": "经常使用终端的用户可以关注并排工作区及恢复会话修复。",
+      "score": 84,
+      "adjust": "可以关注",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.168.0"
+    },
+    {
+      "tool": "Codex",
+      "time": "16:37",
+      "source": "GitHub 发布记录",
+      "title": "Codex CLI 0.169.0 扩展终端工作区并修复未信任目录执行行为",
+      "summary": "可选终端工作区支持多个侧聊标签和恢复本地侧聊；可搜索旧任务、折叠已完成活动、在终端编辑自定义模型提供商。codex exec 在未信任目录继续禁用项目配置和 MCP，即使指定 workspace-write；可用 --trust 明确保存信任。",
+      "reason": "常用 CLI 和自动化执行的用户需要核对目录信任与项目配置加载方式。",
+      "score": 88,
+      "adjust": "需要",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0"
+    },
+    {
+      "tool": "ChatGPT",
+      "time": "23:00",
+      "source": "OpenAI 官方博客",
+      "title": "ChatGPT Wallet 开始向美国成年 Pro 用户推出",
+      "summary": "dot 可保存符合条件的美国银行卡以协助购物；付款前展示商家、商品、总额和卡片，并通过生物识别授权，使用替代支付凭据保护真实卡信息。逐步面向美国 18 岁以上 Pro 用户开放，需符合条件的美国卡与账单地址。",
+      "reason": "符合地区和订阅条件的用户可以关注；付款授权后仍需确认商家订单。",
+      "score": 80,
+      "adjust": "可以关注",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+    },
+    {
+      "tool": "Claude",
+      "time": "04:16",
+      "source": "X @claudeai",
+      "title": "Claude Meetings 面向 Team 和 Enterprise 开启测试",
+      "summary": "Claude 作为可见参与者加入 Google Meet，做笔记、回答问题，并在会议中创建文档、白板等产物；会后可查看笔记、行动项、记录及产物。",
+      "reason": "经常开团队会议的用户可以关注会议中协作和会后整理能力。",
+      "score": 82,
+      "adjust": "可以关注",
+      "url": "https://x.com/claudeai/status/2120973994191094179"
+    },
+    {
+      "tool": "Claude Code",
+      "time": "06:12",
+      "source": "GitHub 发布记录",
+      "title": "Claude Code 2.1.323 引入实验性 Code Mode 并修复权限与登录问题",
+      "summary": "新增主动开启的实验性 Code Mode，由 Claude 编写 JavaScript 调用工具；插件可声明 Claude Code 版本范围，校验支持 TypeScript hooks 类型检查；修复后台会话切换身份、权限检查及沙箱保护等问题。",
+      "reason": "日常使用 Claude Code 的用户需要关注权限和身份修复；Code Mode 可按需试用。",
+      "score": 88,
+      "adjust": "需要",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323"
+    },
+    {
+      "tool": "DeepSeek",
+      "time": "22:24",
+      "source": "X @deepseek_ai",
+      "title": "DeepSeek 将搜索、文件、链接、安全和语音能力开放为 API",
+      "summary": "官方宣布应用背后的搜索、文件、链接、安全与语音能力开放 API；可用参数启用内置功能或调用 OCR、ASR、TTS 等独立 API。V4.1-Flash 在 Messages、Responses 和 Chat Completions 支持相关能力，扩展功能的工具费用另计。",
+      "reason": "使用 DeepSeek API 构建应用的用户需要核对新增工具能力与费用。",
+      "score": 87,
+      "adjust": "需要",
+      "url": "https://x.com/deepseek_ai/status/2121247896918253875"
+    }
+  ],
+  "quiet": [],
+  "failed": []
+}
